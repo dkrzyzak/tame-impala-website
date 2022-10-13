@@ -20,4 +20,5 @@ html,
 body {
 	width: 100vw;
 	overflow-x: hidden;
+	background: linear-gradient(-25deg, #8c4c7a, #464688, #604789, #8a264f, #7c8982 60%);
 }
