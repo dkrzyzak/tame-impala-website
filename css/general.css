@@ -29,3 +29,19 @@ body.gradient-homepage {
 body.gradient-default {
 	background: linear-gradient(-25deg, #8c4c7a, #464688, #604789, #8a264f);
 }
+
+h2.section-header {
+	font-family: 'Microgramma';
+	text-align: center;
+	color: white;
+	text-shadow: 4px 3px 1px black;
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}

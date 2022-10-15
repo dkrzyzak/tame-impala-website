@@ -1,5 +1,5 @@
 const handleCollapsibleMenu = () => {
-	const collapsibleControl = document.querySelector('#collapse-control');
+	const collapsibleControl = document.querySelector('.collapse-control');
 	const navUlElement = document.querySelector('nav ul');
 
 	collapsibleControl.addEventListener('click', () => {
