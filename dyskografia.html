@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Tame Impala</title>
+   <title>Tame Impala - Dyskografia</title>
 
    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css" />
 
@@ -13,6 +13,9 @@
    <link rel="stylesheet" href="css/navbar.css" />
 
    <link rel="stylesheet" href="css/dyskografia.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
 </head>
 
 <body class="gradient-default">
@@ -40,10 +43,19 @@
 
    <section class="main-section">
       <h2 class="section-header">DYSKOGRAFIA</h2>
+
+      <div class="swiper" id="discography-container">
+         <div class="swiper-wrapper"></div>
+
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
    </section>
 
 
    <script src="js/index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/dyskografia.js"></script>
 </body>
 
 </html>

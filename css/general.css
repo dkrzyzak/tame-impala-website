@@ -37,10 +37,20 @@ h2.section-header {
 	text-shadow: 4px 3px 1px black;
 }
 
-@media (min-width: 320px) {
+.main-section {
+	margin-top: 100px;
+}
+
+@media (min-width: 375px) {
+	h2.section-header {
+		font-size: 32px;
+	}
 }
 
 @media (min-width: 768px) {
+	h2.section-header {
+		font-size: 64px;
+	}
 }
 
 @media (min-width: 1200px) {
