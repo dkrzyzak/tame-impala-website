@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Microgramma';
-	src: url('./assets/Microgramma-Normal.woff2');
+	src: url('../assets/Microgramma-Normal.woff2');
 }
 
 @font-face {
 	font-family: 'Microgramma Bold';
-	src: url('./assets/Microgramma-Bold.woff2');
+	src: url('../assets/Microgramma-Bold.woff2');
 }
 
 *,
@@ -20,5 +20,12 @@ html,
 body {
 	width: 100vw;
 	overflow-x: hidden;
+}
+
+body.gradient-homepage {
 	background: linear-gradient(-25deg, #8c4c7a, #464688, #604789, #8a264f, #7c8982 60%);
+}
+
+body.gradient-default {
+	background: linear-gradient(-25deg, #8c4c7a, #464688, #604789, #8a264f);
 }
