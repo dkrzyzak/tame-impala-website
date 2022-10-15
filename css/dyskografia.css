@@ -1,5 +1,5 @@
 .main-section {
-	margin-bottom: 50vh;
+	margin-bottom: 10vh;
 }
 
 #discography-container {
@@ -18,12 +18,17 @@
 	width: 100%;
 	text-align: center;
 	font-family: Microgramma;
+	color: #fff;
+	text-shadow: 2px 2px 2px red;
 }
 
 .album-year {
 	width: 100%;
 	text-align: center;
 	font-family: Microgramma;
+	color: #fff;
+	text-shadow: 2px 2px 1px #000;
+	margin-bottom: 10px;
 }
 
 .album-cover-container {
@@ -38,13 +43,45 @@
 .single-track {
 	display: flex;
 	justify-content: space-between;
+	cursor: default;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.single-track:nth-child(2n) {
+	background: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 320px) {
+	.album-title,
+	.album-year {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 460px) {
+	#discography-container {
+		width: 75%;
+	}
+
+	.album-title,
+	.album-year {
+		font-size: 24px;
+	}
 }
 
 @media (min-width: 768px) {
+	#discography-container {
+		width: 50%;
+	}
+
+	.album-title,
+	.album-year {
+		font-size: 36px;
+	}
 }
 
 @media (min-width: 1200px) {
+	#discography-container {
+		width: 40%;
+	}
 }
