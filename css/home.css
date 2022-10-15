@@ -39,13 +39,94 @@ h1#main-header:hover {
 	text-shadow: 0px 0px 15px rgb(0, 163, 147);
 }
 
+article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.article-text {
+	width: 80%;
+}
+
+.article-header {
+	font-family: Microgramma;
+	text-align: center;
+}
+
+.article-text p {
+	text-align: justify;
+	margin: 10px auto;
+}
+
+.article-image-container {
+	width: 80%;
+	position: relative;
+}
+
+.article-image-container:hover .article-hover-content {
+	opacity: 1;
+}
+
+.article-hover-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 200ms ease;
+}
+
+.article-hover-content a {
+	background: rgba(255, 255, 255, 0.8);
+	color: black;
+	text-decoration: none;
+	padding: 4px 8px;
+	border-radius: 2px;
+	transition: background 250ms ease;
+}
+
+.article-hover-content a:hover {
+	background: rgba(255, 255, 255);
+}
+
+.article-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 section {
-	height: 1200px;
+	margin-bottom: 50px;
 }
 
 @media (min-width: 320px) {
 	h1#main-header {
 		font-size: 56px;
+	}
+
+	.article-header {
+		font-size: 24px;
+	}
+
+	.article-text p {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 460px) {
+	.article-header {
+		font-size: 32px;
+	}
+
+	.article-hover-content a {
+		font-size: 28px;
 	}
 }
 
@@ -53,7 +134,31 @@ section {
 	h1#main-header {
 		font-size: 80px;
 	}
+
+	.article-text p {
+		font-size: 26px;
+	}
 }
 
 @media (min-width: 1000px) {
+	article {
+		flex-direction: row;
+		padding: 0 20px;
+	}
+
+	article:nth-child(2n) {
+		flex-direction: row-reverse;
+	}
+
+	.article-header {
+		font-size: 40px;
+	}
+
+	.article-text p {
+		font-size: 32px;
+		padding: 0 40px;
+	}
+}
+
+@media (pointer: coarse) {
 }

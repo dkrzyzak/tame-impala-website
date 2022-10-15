@@ -97,11 +97,11 @@ const generateDiscographySection = () => {
 
 		// TRACKLIST
 		const tracklistContainer = createElement('ul', ['tracklist-container']);
-		tracklist.forEach((trackData) => {
+		tracklist.forEach((trackData, index) => {
 			const singleTrack = createElement('li', ['single-track']);
 
 			const trackName = createElement('span', ['track-name']);
-			trackName.textContent = trackData.name;
+			trackName.textContent = `${index + 1}. ${trackData.name}`;
 
 			const duration = createElement('span', ['track-duration']);
 			duration.textContent = trackData.duration;
