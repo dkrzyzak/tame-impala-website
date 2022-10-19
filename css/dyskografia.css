@@ -45,6 +45,7 @@
 	justify-content: space-between;
 	cursor: default;
 	background: rgba(255, 255, 255, 0.2);
+	padding: 4px 6px;
 }
 
 .single-track:nth-child(2n) {

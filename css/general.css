@@ -42,9 +42,21 @@ h2.section-header {
 	margin-top: 100px;
 }
 
+.main-section p {
+	text-align: center;
+	margin: 10px auto;
+	padding: 0 20px;
+	font-size: 18px;
+	color: white;
+}
+
 @media (min-width: 375px) {
 	h2.section-header {
 		font-size: 32px;
+	}
+
+	.main-section p {
+		font-size: 24px;
 	}
 }
 
