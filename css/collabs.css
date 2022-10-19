@@ -4,6 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 20px;
+	padding: 0 20px;
 }
 
 .collab {
@@ -16,7 +17,6 @@
 .badge {
 	display: none;
 	position: absolute;
-	top: 20px;
 	padding: 2px 4px;
 	border-radius: 4px;
 	transform: rotate(-30deg);
@@ -28,26 +28,30 @@
 }
 
 .badge.vocal {
+	top: 20px;
 	left: 10px;
 	color: white;
 	background: linear-gradient(60deg, rgb(13, 155, 3), #a4a400);
 }
 
 .badge.prod {
-	left: 2px;
+	top: 25px;
+	left: -5px;
 	color: white;
 	background: linear-gradient(60deg, rgb(134, 0, 60), #c68c03);
 }
 
 .badge.remix {
+	top: 20px;
 	left: 10px;
 	color: white;
 	background: linear-gradient(60deg, #ff2ace, #007da4);
 }
 
-@media (min-width: 520px) {
+@media (min-width: 660px) {
 	.collaborations-section {
 		flex-flow: row wrap;
+		padding: 0 40px;
 	}
 
 	.collab {
@@ -59,6 +63,7 @@
 @media (min-width: 900px) {
 	.collaborations-section {
 		margin-top: 60px;
+		padding: 0 60px;
 	}
 
 	.collab {
