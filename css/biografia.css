@@ -1,0 +1,60 @@
+.biography-section {
+	margin: 32px 0 40px;
+}
+
+.biography-item {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 90%;
+	margin: 0 auto 20px;
+}
+
+.biography-paragraph {
+	text-align: justify;
+	background: rgba(255, 255, 255, 0.3);
+	padding: 10px 12px;
+	font-size: 16px;
+	border-radius: 6px;
+}
+
+.image-container {
+	width: 90%;
+	margin: 0 auto 15px;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 460px) {
+	.biography-paragraph {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.biography-item {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.biography-paragraph {
+		width: 40%;
+	}
+
+	.image-container {
+		width: 50%;
+	}
+
+	.biography-item:nth-child(2n) {
+		flex-direction: row-reverse;
+	}
+}
+
+@media (min-width: 1200px) {
+	.biography-paragraph {
+		font-size: 24px;
+	}
+}
