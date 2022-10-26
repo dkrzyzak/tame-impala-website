@@ -95,7 +95,6 @@ article {
 }
 
 .article-hover-content a:hover {
-	/* background: rgba(255, 255, 255); */
 	color: rgba(255, 255, 255, 0.8);
 	background: black;
 }
