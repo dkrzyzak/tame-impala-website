@@ -50,6 +50,50 @@ h2.section-header {
 	color: white;
 }
 
+footer {
+	border-top: 2px solid gray;
+	margin: 10px 0 30px;
+	padding-top: 10px;
+}
+
+footer .copy {
+	font-size: 12px;
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+	cursor: default;
+	transition: color 500ms ease-out;
+}
+
+footer .copy:hover {
+	color: transparent;
+}
+
+.footer-sitemap {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.footer-sitemap a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	transition: color 200ms ease;
+	font-variant: small-caps;
+	font-size: 12px;
+}
+
+.footer-sitemap a:hover {
+	color: rgb(255, 255, 255);
+	text-decoration: line-through;
+}
+
+@media (min-width: 320px) {
+	.footer-sitemap a {
+		font-size: 16px;
+	}
+}
+
 @media (min-width: 375px) {
 	h2.section-header {
 		font-size: 32px;
@@ -58,11 +102,23 @@ h2.section-header {
 	.main-section p {
 		font-size: 24px;
 	}
+
+	footer .copy {
+		font-size: 16px;
+	}
 }
 
 @media (min-width: 768px) {
 	h2.section-header {
 		font-size: 64px;
+	}
+
+	.footer-sitemap a {
+		font-size: 24px;
+	}
+
+	footer .copy {
+		font-size: 26px;
 	}
 }
 
